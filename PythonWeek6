@@ -1,0 +1,34 @@
+# 1) Existing website users
+web_users = ["johnny", "zoey", "jamie", "matt", "sarah"]
+# 2) New users trying to sign up (2 duplicates + 3 new)
+new_users = ["zoey", "alex", "johnny", "kevin", "mia"]
+#loop for checking user name 
+for new_user in new_users:
+    if new_user in web_users:
+        print("This user name is already in use. Please choose a different user name.")
+    else:
+        print("This user name is available.")
+
+#Nest Dictionaries 
+cities = {
+    "Seattle": {
+        "country": "United States",
+        "population": 748256,
+        "fact": "Seattle is known for the Space Needle."
+    },
+    "Tokyo": {
+        "country": "Japan",
+        "population": 13960000,
+        "fact": "Tokyo is one of the largest metropolitan areas in the world."
+    },
+     "Paris": {
+        "country": "France",
+        "population": 2161000,
+        "fact": "Paris is home to the effel tower."
+    }
+}
+for city, info in cities.items():
+    print(f"City: {city}")
+    print(f"\tCountry: {info['country']}")
+    print(f"\tPopulation: {info['population']}")
+    print(f"\tFact: {info['fact']}")
